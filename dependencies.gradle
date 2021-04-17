@@ -1,0 +1,56 @@
+ext {
+    kotlin = "org.jetbrains.kotlin:kotlin-stdlib:"
+    material = "com.google.android.material:material:"
+    appcompat = "androidx.appcompat:appcompat:"
+    core = "androidx.core:core-ktx:"
+    activity = "androidx.activity:activity-ktx:"
+    fragment = "androidx.fragment:fragment-ktx:"
+    recyclerView = "androidx.recyclerview:recyclerview:"
+    swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:"
+    constraintLayout = "androidx.constraintlayout:constraintlayout:"
+
+    navigationFragment = "androidx.navigation:navigation-fragment-ktx:"
+    navigationUI = "androidx.navigation:navigation-ui-ktx:"
+    navigationDynamicFeatures = "androidx.navigation:navigation-ui-ktx:"
+
+    dagger = "com.google.dagger:dagger:"
+    daggerAndroid = "com.google.dagger:dagger-android:"
+    daggerAndroidSupport = "com.google.dagger:dagger-android-support:"
+    daggerCompiler = "com.google.dagger:dagger-compiler:"
+    daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:"
+
+    coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:"
+
+    glide = "com.github.bumptech.glide:glide:"
+    glideCompiler = "com.github.bumptech.glide:compiler:"
+
+    lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:"
+    lifecycleLiveData = "androidx.lifecycle:lifecycle-livedata-ktx:"
+    lifecycleSaveData = "androidx.lifecycle:lifecycle-viewmodel-savedstate:"
+    lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:"
+
+    mlKitBarcode = "com.google.mlkit:barcode-scanning:"
+    camera = "androidx.camera:camera-lifecycle:"
+
+    retrofit = "com.squareup.retrofit2:retrofit:"
+    retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:"
+    okHttp = "com.squareup.okhttp3:okhttp:"
+    loggingInterceptor = 'com.squareup.okhttp3:logging-interceptor:'
+
+    navigationVer = "2.3.4"
+    daggerVer = "2.27"
+    coroutinesVer = "1.4.1"
+    glideVer = "4.11.0"
+    lifecycleVer = "2.3.0"
+    materialVer = "1.3.0"
+    appcompatVer = "1.2.0"
+    coreVer = "1.3.2"
+    activityVer = "1.2.1"
+    fragmentVer = "1.3.1"
+    recyclerViewVer = "1.1.0"
+    constraintLayoutVer = "2.0.4"
+    mlKitVer = "16.1.1"
+    cameraVer = "1.1.0-alpha03"
+    retrofitVer = "2.9.0"
+    okHttpVer = "4.9.1"
+}
