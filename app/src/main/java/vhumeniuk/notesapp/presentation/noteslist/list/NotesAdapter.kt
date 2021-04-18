@@ -7,14 +7,16 @@ import vhumeniuk.notesapp.domain.Note
 import vhumeniuk.notesapp.presentation.base.BaseAdapter
 import vhumeniuk.notesapp.presentation.base.BaseViewHolder
 
-class NotesAdapter: BaseAdapter<Note>(NoteComparator()) {
+class NotesAdapter(
+    private val noteSelectedListener: NoteSelectedListener
+): BaseAdapter<Note>(NoteComparator()) {
 
     override fun getItemLayout(type: Int): Int {
         return R.layout.list_item_note
     }
 
     override fun createViewHolder(itemView: View, type: Int): BaseViewHolder<Note> {
-        return NoteViewHolder(itemView)
+        return NoteViewHolder(itemView, noteSelectedListener)
     }
 
     class NoteComparator: DiffUtil.ItemCallback<Note>() {
@@ -26,5 +28,9 @@ class NotesAdapter: BaseAdapter<Note>(NoteComparator()) {
         override fun areContentsTheSame(oldItem: Note, newItem: Note): Boolean {
             return oldItem.text == newItem.text
         }
+    }
+
+    interface NoteSelectedListener {
+        fun selected(note: Note)
     }
 }

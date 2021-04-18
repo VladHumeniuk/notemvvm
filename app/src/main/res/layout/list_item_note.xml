@@ -17,6 +17,7 @@
             android:id="@+id/note_title"
             style="@style/WrapHeightMatchWidth"
             android:textSize="24sp"
+            android:singleLine="true"
             android:text="@{note.text}"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

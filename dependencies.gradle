@@ -37,7 +37,7 @@ ext {
     okHttp = "com.squareup.okhttp3:okhttp:"
     loggingInterceptor = 'com.squareup.okhttp3:logging-interceptor:'
 
-    navigationVer = "2.3.4"
+    navigationVer = "2.3.5"
     daggerVer = "2.27"
     coroutinesVer = "1.4.1"
     glideVer = "4.11.0"
