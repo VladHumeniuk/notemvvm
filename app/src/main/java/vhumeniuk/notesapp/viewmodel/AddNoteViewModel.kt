@@ -20,7 +20,11 @@ class AddNoteViewModel @Inject constructor(
 
     fun loadNote(noteId: String) {
         viewModelScope.launch {
-           _note.value = notesFacade.getNote(noteId)
+            _note.value = if (noteId.isBlank()) {
+                notesFacade.createNote(UUID.randomUUID().toString())
+            } else {
+               notesFacade.getNote(noteId)
+            }
         }
     }
 

@@ -47,10 +47,10 @@ class NotesFragment: BaseFragment() {
         notesViewModel.notes.observe(this, Observer { notes ->
             notesAdapter.submitList(notes)
         })
-        binding?.addNoteButton?.setOnClickListener { _ -> navigateToNote(UUID.randomUUID().toString()) }
+        binding?.addNoteButton?.setOnClickListener { _ -> navigateToNote() }
     }
 
-    private fun navigateToNote(id: String) {
+    private fun navigateToNote(id: String = "") {
         val action = NotesFragmentDirections.actionNotesFragmentToAddNoteFragment(id)
         findNavController().navigate(action)
     }

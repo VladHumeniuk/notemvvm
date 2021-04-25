@@ -70,6 +70,10 @@ dependencies {
     implementation navigationUI + navigationVer
     implementation navigationDynamicFeatures + navigationVer
 
+    //ROOM
+    implementation roomKtx + roomVer
+    kapt roomCompiler + roomVer
+
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

@@ -10,4 +10,6 @@ interface NotesFacade {
     suspend fun saveNote(note: Note)
 
     suspend fun getNote(id: String): Note
+
+    suspend fun createNote(id: String): Note
 }

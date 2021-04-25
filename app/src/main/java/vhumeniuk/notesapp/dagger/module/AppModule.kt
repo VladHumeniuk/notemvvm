@@ -9,7 +9,8 @@ import vhumeniuk.notesapp.presentation.noteslist.NotesFragment
 @Module(includes = [
     GlobalModule::class,
     ViewModelModule::class,
-    FacadeModule::class
+    FacadeModule::class,
+    DatabaseModule::class
 ])
 abstract class AppModule {
 
